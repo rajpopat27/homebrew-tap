@@ -10,7 +10,7 @@ class RelayFlow < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/rajpopat27/relay-flow/releases/download/v0.2.11-alpha/relay-flow_darwin_amd64.tar.gz"
-      sha256 "42c8c28a71bf1a9c4f07a15ace787de7d86e1aef4fbd1f5c9eef0fd73398bf2e"
+      sha256 "de881ba21ddbf4994f73461764119bde596b0596aaf9f5589e86a9387a3ec4f5"
 
       define_method(:install) do
         bin.install "relay-flow"
@@ -18,7 +18,7 @@ class RelayFlow < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/rajpopat27/relay-flow/releases/download/v0.2.11-alpha/relay-flow_darwin_arm64.tar.gz"
-      sha256 "66add10d5d65067a2f8dafe81cdb95e75c564c606c7fa8e4d4f2160f6a18cb37"
+      sha256 "66e5d8061c834cb672866d46dbce6fe25f67fcc31401015a879f4572aa0a8f00"
 
       define_method(:install) do
         bin.install "relay-flow"
@@ -29,14 +29,14 @@ class RelayFlow < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/rajpopat27/relay-flow/releases/download/v0.2.11-alpha/relay-flow_linux_amd64.tar.gz"
-      sha256 "e86edca061513850f18b76afb6f588c5a8c5ca3e8806f4f4b52499a4802390a3"
+      sha256 "9f91e821e52a0e7777597841847f0a6d76c031cc0e0ad40f39e011769273c6e5"
       define_method(:install) do
         bin.install "relay-flow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/rajpopat27/relay-flow/releases/download/v0.2.11-alpha/relay-flow_linux_arm64.tar.gz"
-      sha256 "3e848dd23879079346666e8ec65d115c2bbce203a2fcf2b540b887c3b0f8f7bc"
+      sha256 "04dc9dfcf5b1b6a279cb12a8e326c42a8faf8ce24e7ac0f14fcc193d248eb0bf"
       define_method(:install) do
         bin.install "relay-flow"
       end
