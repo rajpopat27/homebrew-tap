@@ -5,20 +5,20 @@
 class RelayFlow < Formula
   desc "Graph-based agent workflow engine"
   homepage "https://github.com/rajpopat27/relay-flow"
-  version "0.3.12-alpha"
+  version "0.3.13-alpha"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rajpopat27/relay-flow/releases/download/v0.3.12-alpha/relay-flow_darwin_amd64.tar.gz"
-      sha256 "03e74d90ca620ccb2adccf0c0e09749e7b915a43001c53a97869f7106e2e68a7"
+      url "https://github.com/rajpopat27/relay-flow/releases/download/v0.3.13-alpha/relay-flow_darwin_amd64.tar.gz"
+      sha256 "4deedf2c42d6afe9a077fb23ab49480bb1993e657af190b4e07587dc1ba47c9e"
 
       define_method(:install) do
         bin.install "relay-flow", "rf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rajpopat27/relay-flow/releases/download/v0.3.12-alpha/relay-flow_darwin_arm64.tar.gz"
-      sha256 "a51f63e66fd06737397d0daed9613bd2f26dae811f53afb8432d36e1fd2347b4"
+      url "https://github.com/rajpopat27/relay-flow/releases/download/v0.3.13-alpha/relay-flow_darwin_arm64.tar.gz"
+      sha256 "aab20c6f343e03800929e2b5701e511dacb9c16f037a0c25f1c6a4c28787dd50"
 
       define_method(:install) do
         bin.install "relay-flow", "rf"
@@ -28,15 +28,15 @@ class RelayFlow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rajpopat27/relay-flow/releases/download/v0.3.12-alpha/relay-flow_linux_amd64.tar.gz"
-      sha256 "229ddcb6170311a6c88cf0a7a440dcf9d22780b3e6a126b493ad470ce968ce5e"
+      url "https://github.com/rajpopat27/relay-flow/releases/download/v0.3.13-alpha/relay-flow_linux_amd64.tar.gz"
+      sha256 "4420e95e11684eb81f4a430eeabfa39f0c08b768401e2127961bc0137087f837"
       define_method(:install) do
         bin.install "relay-flow", "rf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rajpopat27/relay-flow/releases/download/v0.3.12-alpha/relay-flow_linux_arm64.tar.gz"
-      sha256 "a511cd6ec0b930370e40751b22c719bad9f208f6fab0a0613320abf5333e71bc"
+      url "https://github.com/rajpopat27/relay-flow/releases/download/v0.3.13-alpha/relay-flow_linux_arm64.tar.gz"
+      sha256 "7f6e82bd59eedae71048a86aed3a200e6f3a0094ccbcb44242495dcee1a23b46"
       define_method(:install) do
         bin.install "relay-flow", "rf"
       end
